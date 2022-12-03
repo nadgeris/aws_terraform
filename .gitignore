@@ -1,0 +1,12 @@
+.terragrunt-cache/
+.terraform.lock.hcl
+secrets/
+terraform.tfstate
+.terraform.tfstate*
+*.jks
+*.pem
+full_test.sh
+terragrunt-debug.tfvars.json
+*.txt
+*.plan
+.DS_Store
