@@ -1,0 +1,20 @@
+live:
+  region: "us-east-2"
+  dns_region: "us-east-2"
+  state_region: "eu-west-1"
+  name: "env"
+  namespace: "env"
+  environment: "prod"
+  profile: "qa_sre"
+  domain_name: "xyz.com"
+  key_name: "scnx-tftest50"
+  dns_profile: "qa_sre"
+  hosted_zone_vpc_id: vpc-#####
+  network:
+    second_octet: 52
+rds:
+  instance_type: "db.t3.small"
+applications:
+  api-server:
+    instance_type: t3.medium
+    image: ami-0beaa649c482330f7

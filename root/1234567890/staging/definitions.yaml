@@ -1,0 +1,65 @@
+live:
+  region: "us-east-2"
+  dns_region: "us-east-2"
+  name: "scnx" # to be deprecated
+  namespace: "scnx"
+  environment: "investigate"
+  domain_name: "securonix.net"
+  profile: "default"
+  production: false
+  key_name: "scnx-tftest50"
+  gov_cloud: false
+  vpn_range : "172.32.0.0/16"  # to be deprecated
+  dns_profile: "default"
+  fake_shuffle: "false"
+  enable_alerts: true
+  enable_snapshot_backups: true
+  secrets_profile: default
+  secrets_region: us-east-2
+  hosted_zone_vpc_id: vpc-1081e274
+  sns_topic: "SaaS-poc05"
+  network:
+    second_octet: 50
+    create_eips: true
+    protect_eips: false  # should we use delete_protection for everything ?
+    eip_count: 8
+    public_kafka: true
+    delete_protection: false
+    internal_alb: false
+    enable_proxy: true
+    proxy_image:
+    proxy_size: "t3.xlarge"
+    multi_az: false
+peering:
+  use_cross_account: false
+  peer_account: ''
+  ops_share_vpc: vpc-1081e274
+  auto_accept: false
+  peer_region: us-west-1
+  ops_share_cidr: 172.20.0.0/16
+  associate_dns: true
+  ops_share_peering_profile: default
+certs:
+  create_cert: true
+  cert_domain: '*.securonix.net'
+polarity:
+  a3t1pb6k:
+    customer: "General Electric Company"
+    pod: prod24
+    instance_type: t3.medium
+    image: ami-089a545a9ed9893b6
+  a1t1omwk:
+    customer: "ABC"
+    pod: prod17
+    instance_type: t3.medium
+    image: ami-089a545a9ed9893b6
+  a2t4fn7h:
+    customer: "Alberta Health"
+    pod: prod23
+    instance_type: t3.medium
+    image: ami-089a545a9ed9893b6
+  a1t1xjle:
+    customer: "Gilead Sciences"
+    pod: prod29
+    instance_type: t3.medium
+    image: ami-089a545a9ed9893b6
