@@ -3,10 +3,10 @@
 **#Purpose**
 This is where you configure and maintain all new environments as Infrastructure as Code.
 
-PreReq's
-Every env has a definitions.yaml, where I have defined the veriable
+Pre-requirements: 
+Every env has a definitions.yaml file, where I have defined the veriable
 
-Please update the veriable according your env
+Please update the veriable according to your env
 
 
 
@@ -14,29 +14,29 @@ Please update the veriable according your env
 
 i] VPC will be created.
 
-ii] 4 private subnets group with muti AZ (APP, RDS, Monitoring, ALB)
+ii] 4 private subnet groups with multi AZ (APP, RDS, Monitoring, ALB) will be created.
 
-iii] 4 public subnets group with muti AZ (APP, RDS, Monitoring, ALB)
+iii] 4 public subnet groups with muti AZ (APP, RDS, Monitoring, ALB) will be created.
 
-iv] 1 NAT gateway for private subnet
+iv] 1 NAT gateway for private subnet will be created.
 
-v] 1 Internet gateway for public subnet
+v] 1 Internet gateway for public subnet will bw created.
 
 **#RDS**
 
-i] RDS will get launch in RDS subnet
+i] RDS will be launched in RDS subnet
 
-ii] security group
+ii] security group will be created for RDS
 
-iii] python script (create db, create table and create the entery)
+iii] python script (create db, create table and create the entery)will get executed and record will be created.
 
 
 **#APP**
-i] app will launch in app subnet.
+i] app will be launched in app subnet.
 
-ii] security group.
+ii] security group will be created for the app.
 
-iii] flask app will get deploy.
+iii] flask app will get deployed.
 
 
 **Deployment steps **
