@@ -1,9 +1,13 @@
 **#AWS_Terraform**
 
 **#Purpose**
+
 This is where you configure and maintain all new environments as Infrastructure as Code.
 
 Pre-requirements: 
+Terragrunt: 
+Terragrunt is a thin wrapper that provides extra tools for keeping your configurations DRY, working with multiple Terraform modules, and managing remote state.
+
 Every env has a definitions.yaml file, where I have defined the veriable
 
 Please update the veriable according to your env
